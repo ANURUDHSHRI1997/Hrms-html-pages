@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Favorites</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap-5.min.css">
+    <link rel="stylesheet" href="dist/css/admin.min.css">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  </head>
+  <body class="hold-transition sidebar-mini layout-fixed">
+    <div class="wrapper">
+      <div class="preloader">
+        <img class="animation__shake" src="dist/img/logo.png" alt="Logo">
+      </div>
+      <!-- start header code here............... -->
+      <div hrms-include-html="includes/header.html"></div>
+      <!-- end header code here............... -->
+      <!-- start leftpanel code here............... -->
+      <div hrms-include-html="includes/left-panel.html"></div>
+      <!-- end leftpanel code here............... -->
+      <div class="content-wrapper">
+        <div class="content-header">
+            <div class="bg-white p-3 border">
+                <div class="row pt-2 pb-2">
+                    <div class="col-md-12">
+                       <b><h4>Add New IT Assets</h4></b> 
+                        <hr>
+                    </div>
+                </div>
+                <form>
+                  
+                    
+                        <!-- Assets details start -->
+                        <div class="row mt-2 small">
+                            <div class="form-group col-md-4">
+                               <b>Assets Number </b>
+                                <input type="text" class="form-control" name="asset_type" id="assetype" readonly="" placeholder="JNJD0X1">
+                            </div>
+                            <div class="form-group col-md-4">
+                               <b> Alternate Number </b>
+                                <input type="text" class="form-control" name="asset_type" id="assetype" readonly="" placeholder="505476">
+                            </div>
+                            <div class="form-group col-md-4">
+                               <b> Assets Location </b>
+                                <input type="text" class="form-control" name="asset_type" id="assetype" readonly="" placeholder="000 Mumbai">
+                            </div>
+                            <div class="form-group col-md-4">
+                               <b> Assets Type </b>
+                                <input type="text" class="form-control" name="asset_type" id="assetype" readonly="" placeholder="Laptop">
+                            </div>
+                            <div class="form-group col-md-4">
+                             <b> Model </b> 
+                                <input type="" class="form-control" id="model" name="model" placeholder="" value="HCL Infinity" readonly="">
+                            </div>
+                            <div class="form-group col-md-4">
+                             <b>  Make</b>
+                                <input type="text" class="form-control" name="asset_type" id="assetype" readonly="" placeholder="Lenovo">
+                            </div>
+                            <div class="form-group col-md-4">
+                               <b> Vendor Name </b>
+                                <input type="" class="form-control" id="model" name="model" placeholder="" value="GLAXY OFFICE AUTOMATION PVT LTD" readonly="">
+                            </div>
+                            <div class="form-group col-md-8">
+                              <b>  Description </b>
+                                <input type="text" class="form-control" id="exampleFormControlTextarea1" name="vendor_name" placeholder="" value="i5 intel core,500 GB HDD,8Gb Ram" readonly="">
+                            </div>
+                            <div class="form-group col-md-4">
+                              <b>  Accessories </b>
+                                <input type="text" class="form-control" id="accname" name="acc_name" placeholder="" value="ADAPTOR,BAG AND LAPTOP" readonly="">
+                            </div>
+        
+                            <div class="form-group col-md-4">
+                              <b> P.O. Number </b>
+                                <input type="text" class="form-control" name="po_number" id="ponumber" placeholder="" value="3900/19-20" readonly="">
+                            </div>
+                            <div class="form-group col-md-4">
+                              <b> Procurement Year </b>
+                                <input type="text" class="form-control" name="p_year" id="pyear" placeholder="" value="2019" readonly="">
+                            </div>
+                            <div class="form-group col-md-4">
+                              <b> Department ID </b> 
+                                <input type="text" class="form-control" name="p_year" id="pyear" placeholder="" value="DOAA-IT" readonly="">
+                            </div>
+                            <div class="form-group col-md-4">
+                             <b>  P.O. Date</b> 
+                                <input type="text" class="form-control" name="po_date" id="podate" placeholder="" value="25/05/2022" readonly="">
+                            </div>
+                            <div class="form-group col-md-4">
+                               <b> Warranty Expiry Date </b>
+                                <input type="text" class="form-control" name="w_date" id="w_date" placeholder="" value="01/02/2024" readonly="">
+                            </div>
+                            <div class="form-group col-md-4">
+                              <b>  Date of Installation </b>
+                                <input type="text" class="form-control" name="date_installation" id="dateinstallation" placeholder="" value="12/02/2022" readonly="">
+                            </div>
+                            <div class="form-group col-md-4">
+                               <b> Date of Delivery</b>
+                                <input type="text" class="form-control" name="date_deliver" id="datedeliver" placeholder="" value="12/02/2022" readonly="">
+                            </div>
+                            <div class="form-group col-md-4">
+                               
+                            <b> Movable</b>
+                                <input type="text" class="form-control" name="date_deliver" id="datedeliver" placeholder="" value="Yes" readonly="">
+                            </div>
+                            <div class="form-group col-md-4">
+                              <b>Company CD</b> 
+                                <input type="text" class="form-control" name="date_deliver" id="datedeliver" placeholder="" value="UTI AMC" readonly="">
+                            </div>
+                            <div class="form-group col-md-4">
+                            <b> Cost of Assets </b>
+                                <input type="text" class="form-control" name="cost" id="cost" placeholder="" value="49800.00" readonly="">
+                            </div>
+                            <div class="form-group col-md-4">
+                               <b> Status </b>
+                                <input type="text" class="form-control" name="cost" id="cost" placeholder="" value="In Use" readonly="">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <b for="formFile" class="form-label">File Upload</b>
+                                <input class="form-control" type="file" id="formFile">
+                              </div>
+                            <div class="form-group col-md-12 mb-3">
+                                <button type="button" class="btn btn-primary" id="update_val">Save</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Edit</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="row mt-5">
+                       <b> <h4 class="modal-title" id="exampleModalLabel">AMC/Warranty</h4></b>
+                        <hr>
+                        <div class="form-group col-md-3 mb-3">
+                          <b>  WARR.</b>
+                            <input type="text" class="form-control" id="" name="" placeholder="WARR.">
+                        </div>
+                        <div class="form-group col-md-3 mb-3">
+                           <b>From Date</b> 
+                            <input type="date" class="form-control" id="datef" name="date_f" placeholder="">
+                        </div>
+                        <div class="form-group col-md-3 mb-3">
+                           <b> To Date</b>
+                            <input type="date" class="form-control" id="datef" name="date_f" placeholder="">
+                        </div>
+    
+                        <div class="form-group col-md-3 mb-3">
+                          <b> Vendor Name</b>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected="">Select</option>
+                                <option value="1">KARVY INNOTECH LTD</option>
+                                <option value="2">PROGRESSIVE INFOTECH LTD.</option>
+                                <option value="3">WIPRO</option>
+                                <option value="4">ACCEL ICIM</option>
+                                <option value="5">PCS</option>
+                                <option value="6">AD ON ELECTONICS</option>
+                                <option value="7">SWAN</option>
+                                <option value="8">WIZERTECH</option>
+                                <option value="9">MAX INFOSOLUTIONS</option>
+                                <option value="10">DELL INDIA PVT. LTD.</option>
+                                <option value="11">GLOBAL INFONET DISTRIBUTION PVT.LTD.</option>
+                                <option value="12">SUPER INFOMATICS PVT. LTD.</option>
+                                <option value="13">CONNECT COMPUTERS</option>
+                                <option value="14">NAHATA ASSET MANAGEMENT SERVICES</option>
+                                <option value="15">ORIENT TECHNOLOGIES PVT. LTD.</option>
+                                <option value="16">MICROART SYSTEMS INDIA PVT LTD</option>
+                                <option value="17">KIRTI STATIONERS AND PRINTERS</option>
+                                <option value="18">LAUREN INFORMATION TECHNOLOGY PVT LTD.</option>
+                                <option value="19">HP INDIA SALES PVT. LTD.</option>
+                                <option value="20">PENTAGON SYSTEM AND SERVICE PVT. LTD.</option>
+                                <option value="21">VECTRAE INFOTECH PVT LTD.</option>
+                                <option value="22">TEAM COMPUTERS PVT LTD.</option>
+                                <option value="23">UNICOM POST MEDIA SOLUTIONS PVT LTD.</option>
+                                <option value="24">SOFTCEL TECHNOLOGY LTD</option>
+                                <option value="25">CANON INDIA PRIVATE LIMITED</option>
+                                <option value="26">GALAXY OFFICE AUTOMATION PVT.LTD.</option>
+                                <option value="27">PROGRESSIVE INNOTECH LTD</option>
+                                <option value="28">KALYX INFOTECH LTD.</option>
+                            </select>
+                        </div>
+    
+                        <div class="form-group col-md-3 mb-3">
+                           <b> AMC</b>
+                            <input type="text" class="form-control" id="" name="" placeholder="AMC">
+                        </div>
+                        <div class="form-group col-md-3 mb-3">
+                           <b> From Date</b>
+                            <input type="date" class="form-control" id="datef" name="date_f" placeholder="">
+                        </div>
+                        <div class="form-group col-md-3 mb-3">
+                           <b> To Date</b>
+                            <input type="date" class="form-control" id="datef" name="date_f" placeholder="">
+                        </div>
+    
+                        <div class="form-group col-md-3 mb-3">
+                           <b> Vendor Name</b>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected="">Select</option>
+                                <option value="1">KARVY INNOTECH LTD</option>
+                                <option value="2">PROGRESSIVE INFOTECH LTD.</option>
+                                <option value="3">WIPRO</option>
+                                <option value="4">ACCEL ICIM</option>
+                                <option value="5">PCS</option>
+                                <option value="6">AD ON ELECTONICS</option>
+                                <option value="7">SWAN</option>
+                                <option value="8">WIZERTECH</option>
+                                <option value="9">MAX INFOSOLUTIONS</option>
+                                <option value="10">DELL INDIA PVT. LTD.</option>
+                                <option value="11">GLOBAL INFONET DISTRIBUTION PVT.LTD.</option>
+                                <option value="12">SUPER INFOMATICS PVT. LTD.</option>
+                                <option value="13">CONNECT COMPUTERS</option>
+                                <option value="14">NAHATA ASSET MANAGEMENT SERVICES</option>
+                                <option value="15">ORIENT TECHNOLOGIES PVT. LTD.</option>
+                                <option value="16">MICROART SYSTEMS INDIA PVT LTD</option>
+                                <option value="17">KIRTI STATIONERS AND PRINTERS</option>
+                                <option value="18">LAUREN INFORMATION TECHNOLOGY PVT LTD.</option>
+                                <option value="19">HP INDIA SALES PVT. LTD.</option>
+                                <option value="20">PENTAGON SYSTEM AND SERVICE PVT. LTD.</option>
+                                <option value="21">VECTRAE INFOTECH PVT LTD.</option>
+                                <option value="22">TEAM COMPUTERS PVT LTD.</option>
+                                <option value="23">UNICOM POST MEDIA SOLUTIONS PVT LTD.</option>
+                                <option value="24">SOFTCEL TECHNOLOGY LTD</option>
+                                <option value="25">CANON INDIA PRIVATE LIMITED</option>
+                                <option value="26">GALAXY OFFICE AUTOMATION PVT.LTD.</option>
+                                <option value="27">PROGRESSIVE INNOTECH LTD</option>
+                                <option value="28">KALYX INFOTECH LTD.</option>
+                            </select>
+                        </div>
+                         <div class="form-group col-md-12 mb-3">
+                            <button type="button" class="btn btn-primary" id="update_val">Save</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Edit</button>
+                        </div>
+                    </div>
+    
+    <div class="row mt-5">
+       <b> <h4 class="modal-title" id="exampleModalLabel"> Assets Issued to Employees/Returned by Employees</h4></b>
+        <hr>
+        <div class="form-group col-md-4 mb-3">
+          <b> Emp. ID</b>
+            <input type="text" id="srno" name="sr_no" placeholder="Enter Serial Number" class="form-control">
+        </div>
+        <div class="form-group col-md-4 mb-3">
+          <b> Emp. Name</b>
+            <input type="text" id="srno" name="sr_no" placeholder="Enter Serial Number" class="form-control">
+        </div>
+        <div class="form-group col-md-4 mb-3">
+           <b>Date Of Allotment</b>
+            <input type="date" class="form-control" id="datef" name="date_f" placeholder="">
+        </div>
+        <div class="form-group col-md-4 mb-3">
+            <b>Date of Receipt</b>
+            <input type="date" class="form-control" id="datef" name="date_f" placeholder="">
+        </div>
+        <div class="form-group col-md-4 mb-3">
+            <b>Date of Surrender</b>
+            <input type="date" class="form-control" id="datef" name="date_f" placeholder="">
+        </div>
+    
+        <div class="form-group col-md-4 mb-3">
+            <b>Status</b>
+            <select class="form-select" aria-label="Default select example">
+                <option selected="">Select</option>
+                <option value="1">Accepted</option>
+                <option value="4">Surrendered</option>
+                <option value="2">Certified</option>
+                <option value="3">Accepted &amp; Certified</option>
+        </select>
+        </div>
+         <div class="form-group col-md-12 mb-1 mt-3">
+            <button type="button" class="btn btn-primary" id="update_val"> Allot</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        </div>
+    </div>
+    
+                
+          
+    
+                <!-- Modal start -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                 <h5 class="modal-title" id="exampleModalLabel"><!--Constractor/Serviece Provider for
+                                    / -->AMC/Warranty</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body col-md-12 p-4">
+                                <form>
+    
+                                    <div class="row border p-2 mb-2">
+    
+                                        <!-- <div class="form-group col-md-2 mb-3">
+                                            <label>Serial Number</label>
+                                            <input type="text" id="srno" name="sr_no" placeholder="Enter Serial Number"
+                                                class="form-control" />
+                                        </div> -->
+                                        <div class="form-group col-md-2 mb-3">
+                                            <label>AMC/FMS/WARR.</label>
+                                            <select class="form-select" aria-label="Default select example" id="AMCType" name="AMC_Type">
+                                                <option selected="">FMS</option>
+                                                <option value="1">FMS</option>
+                                                <option value="2">AMC</option>
+                                                <option value="3">WARR.</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-md-2 mb-3">
+                                            <label>From Date</label>
+                                            <input type="date" class="form-control" id="datef" name="date_f" placeholder="">
+                                        </div>
+                                        <div class="form-group col-md-2 mb-3">
+                                            <label>From To</label>
+                                            <input type="date" class="form-control" id="datef" name="date_f" placeholder="">
+                                        </div>
+    
+                                        <div class="form-group col-md-2 mb-3">
+                                            <label>Vendor Name</label>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected="">Select</option>
+                                                <option value="1">KARVY INNOTECH LTD</option>
+                                                <option value="2">PROGRESSIVE INFOTECH LTD.</option>
+                                                <option value="3">WIPRO</option>
+                                                <option value="4">ACCEL ICIM</option>
+                                                <option value="5">PCS</option>
+                                                <option value="6">AD ON ELECTONICS</option>
+                                                <option value="7">SWAN</option>
+                                                <option value="8">WIZERTECH</option>
+                                                <option value="9">MAX INFOSOLUTIONS</option>
+                                                <option value="10">DELL INDIA PVT. LTD.</option>
+                                                <option value="11">GLOBAL INFONET DISTRIBUTION PVT.LTD.</option>
+                                                <option value="12">SUPER INFOMATICS PVT. LTD.</option>
+                                                <option value="13">CONNECT COMPUTERS</option>
+                                                <option value="14">NAHATA ASSET MANAGEMENT SERVICES</option>
+                                                <option value="15">ORIENT TECHNOLOGIES PVT. LTD.</option>
+                                                <option value="16">MICROART SYSTEMS INDIA PVT LTD</option>
+                                                <option value="17">KIRTI STATIONERS AND PRINTERS</option>
+                                                <option value="18">LAUREN INFORMATION TECHNOLOGY PVT LTD.</option>
+                                                <option value="19">HP INDIA SALES PVT. LTD.</option>
+                                                <option value="20">PENTAGON SYSTEM AND SERVICE PVT. LTD.</option>
+                                                <option value="21">VECTRAE INFOTECH PVT LTD.</option>
+                                                <option value="22">TEAM COMPUTERS PVT LTD.</option>
+                                                <option value="23">UNICOM POST MEDIA SOLUTIONS PVT LTD.</option>
+                                                <option value="24">SOFTCEL TECHNOLOGY LTD</option>
+                                                <option value="25">CANON INDIA PRIVATE LIMITED</option>
+                                                <option value="26">GALAXY OFFICE AUTOMATION PVT.LTD.</option>
+                                                <option value="27">PROGRESSIVE INNOTECH LTD</option>
+                                                <option value="28">KALYX INFOTECH LTD.</option>
+                                            </select>
+                                        </div>
+                                         <div class="form-group col-md-4 mb-3 mt-3 text-end">
+                                            <button type="button" class="btn btn-primary" id="update_val">Save</button>
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Edit</button>
+                                            
+    
+                                        </div>
+                                    </div>
+    
+    
+                                </form>
+                            </div>
+                            <!-- <div class="modal-footer">
+                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">-</button>
+                   <button type="button" class="btn btn-primary" id="update_val">+</button>
+                   
+                 </div> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- model end -->
+    
+                <!-- Modal start -->
+                <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel"> Assets Issued to Employees/Returned by Employees</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body col-md-12 p-4">
+                                <form>
+    
+                                    <div class="row border p-2 mb-2">
+    
+                                        <!-- <div class="form-group col-md-2 mb-3">
+                                            <label>Serial Number</label>
+                                            <input type="text" id="srno" name="sr_no" placeholder="Enter Serial Number"
+                                                class="form-control" />
+                                        </div> -->
+                                        <div class="form-group col-md-2 mb-3">
+                                            <label>Emp. ID</label>
+                                            <input type="text" id="srno" name="sr_no" placeholder="Enter Serial Number" class="form-control">
+                                        </div>
+                                        <div class="form-group col-md-2 mb-3">
+                                            <label>Emp. Name</label>
+                                            <input type="text" id="srno" name="sr_no" placeholder="Enter Serial Number" class="form-control">
+                                        </div>
+                                        <div class="form-group col-md-2 mb-3">
+                                            <label>Date Of Recieve</label>
+                                            <input type="date" class="form-control" id="datef" name="date_f" placeholder="">
+                                        </div>
+                                        <div class="form-group col-md-2 mb-3">
+                                            <label>Date Of Return</label>
+                                            <input type="date" class="form-control" id="datef" name="date_f" placeholder="">
+                                        </div>
+    
+                                        <div class="form-group col-md-2 mb-3">
+                                            <label>Status</label>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected="">Select</option>
+                                                <option value="1">Accepted</option>
+                                                <option value="2">Surrendered</option>
+                                                <option value="3">Certification</option>
+                                        </select>
+                                        </div>
+                                         <div class="form-group col-md-2 mb-1 mt-3 text-end">
+                                            <button type="button" class="btn btn-primary" id="update_val"> allot</button>
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                        </div>
+                                    </div>
+    
+                                   
+    
+                                </form>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                <!-- model end -->
+                
+                <div class="row mt-5">
+                    <div class="form-group col-md-3">
+                        <button type="button" class="btn btn-primary w-100" onclick="location.href='add-new-assets-list.html'">Submit</button>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <button type="reset" class="btn btn-primary ml-2 border w-100">Cancel</button>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+      </div>
+      <!-- start footer code here............... -->
+      <div hrms-include-html="includes/footer.html"></div>
+      <!-- end footer code here............... -->
+      </div>
+      <script src="dist/js/hrms.js"></script>
+      <script src="dist/js/script.js"></script>
+      <script src="plugins/jquery/jquery.min.js"></script>
+      <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+      <script>
+        $.widget.bridge('uibutton', $.ui.button)
+      </script>
+      <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="dist/js/admin.js"></script>
+      <script src="dist/js/demo.js"></script>
+      <script src="plugins/datatables/jquery.dataTables.min.js"></script>
+      <!--<script src="plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>-->
+      <script src="plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+      <!--  <script src="plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>-->
+      <script src="plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+      <!--  <script src="plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>-->
+      <script src="plugins/jszip/jszip.min.js"></script>
+      <script src="plugins/pdfmake/pdfmake.min.js"></script>
+      <script src="plugins/pdfmake/vfs_fonts.js"></script>
+      <script src="plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+      <script src="plugins/datatables-buttons/js/buttons.print.min.js"></script>
+      <script src="plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+      <script>
+        var expanded = false;
+
+        function showCheckboxes() {
+          var checkboxes = document.getElementById("checkboxes");
+          if (!expanded) {
+            checkboxes.style.display = "block";
+            expanded = true;
+          } else {
+            checkboxes.style.display = "none";
+            expanded = false;
+          }
+        }
+      </script>
+      <script>
+        $(function() {
+          $("#example1").DataTable({
+            responsive: true,
+            lengthChange: false,
+            autoWidth: false,
+            buttons: ["copy", "csv", "excel", "pdf", "print", "colvis"],
+          }).buttons().container().appendTo("#example1_wrapper .col-md-6:eq(0)");
+          $("#example2").DataTable({
+            paging: true,
+            lengthChange: false,
+            searching: false,
+            ordering: true,
+            info: true,
+            autoWidth: false,
+            responsive: true,
+          });
+        });
+      </script>
+  </body>
+</html>
